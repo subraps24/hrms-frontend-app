@@ -16,10 +16,10 @@ import PayrollMaster from './components/PayrollMaster';
 import ConsolidatedAttendance from './components/ConsolidatedAttendance';
 import PayrollProcessing from './components/PayrollProcessing';
 import PayrollMapping from './components/PayrollMapping';
-import chatbot from './components/Chatbot';
+//import chatbot from './components/Chatbot';
 import Payslip from './components/Payslip';
+import PermissionManagement from './components/PermissionManagement';
 import LeaveManagement from './components/LeaveManagement';
-
 function App() {
     return (
         <Router>
@@ -89,6 +89,12 @@ function App() {
 <Route
                     path="/leave-management"
                     element={<ProtectedRoute component={LeaveManagement} roles={['Admin', 'HR', 'Manager','Employee']} />} // Add ShiftMapping route here
+                />
+
+
+<Route
+                    path="/permission-management"
+                    element={<ProtectedRoute component={PermissionManagement} roles={['Admin', 'HR', 'Manager','Employee']} />} // Add ShiftMapping route here
                 />
             </Routes>
         </Router>

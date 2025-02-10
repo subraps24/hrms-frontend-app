@@ -280,7 +280,19 @@ const Dashboard = () => {
                         </Button>
                     </Paper>
                 </Grid>
-
+            {/* Permission Management */}
+<Grid item xs={12} sm={6} md={4}>
+                    <Paper elevation={3} sx={{ padding: 2, textAlign: 'center' }}>
+                        <Typography variant="h6">Permission Mangement</Typography>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            onClick={() => navigate('/permission-management')}
+                        >
+                            Permission Management 
+                        </Button>
+                    </Paper>
+                </Grid>
 
                 {/* Admin Page */}
                 {userRole === 'Admin' && (
