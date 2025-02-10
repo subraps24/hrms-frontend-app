@@ -1,0 +1,138 @@
+/* General container */
+.organize-attendance-container {
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #1e88e5;
+    margin-bottom: 1rem;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title {
+    font-weight: bold;
+    color: white;
+}
+
+/* Buttons */
+.back-button {
+    background-color: #ffd700;
+    color: black;
+    font-weight: bold;
+}
+
+.logout-button {
+    background-color: #b23b3b;
+    color: white;
+}
+
+/* File upload section */
+.file-upload-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.upload-button {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.file-name {
+    margin-top: 1rem;
+    color: #333;
+}
+
+.organize-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Error and success messages */
+.error-message {
+    color: red;
+    margin-top: 1rem;
+}
+
+.success-message {
+    color: green;
+    margin-top: 1rem;
+}
+
+/* Table container with scrollable body */
+.table-container {
+    margin-top: 2rem;
+    max-height: 400px;
+    /* Max height for table scroll */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    /* Table border */
+}
+
+/* Sticky table header */
+.table-head {
+    position: sticky;
+    /* Make header sticky */
+    top: 0;
+    z-index: 2;
+    background-color: #0eb37c;
+    /* Background color for the sticky header */
+}
+
+.table-head th {
+    color: white;
+    font-weight: bold;
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 2px solid white;
+}
+
+/* Table rows */
+.table-row {
+    transition: background-color 0.2s ease;
+}
+
+.table-row:hover {
+    background-color: #f1f1f1;
+}
+
+/* Logout Modal */
+.logout-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.modal-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.modal-content {
+    margin-bottom: 2rem;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
